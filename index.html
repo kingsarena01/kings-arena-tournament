@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>King's Arena</title>
+<title>King's Arena eFootball Tournament</title>
 
 <style>
 body{
@@ -31,23 +31,112 @@ button{
     background:gold;
     font-size:18px;
     font-weight:bold;
+}nav{
+    background:#111;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:gold;
+}.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:20px;
+    padding:25px;
+    text-align:left;
+    border:2px solid gold;
+}
+
+.card h2{
+    margin-top:0;
+    color:gold;
+}
+
+.card p{
+    color:#ddd;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
 }
 </style>
 
 </head>
 
 <body>
-
+<nav>
+  <a href="#">🏠 Home</a> |
+  <a href="#">📝 Register</a> |
+  <a href="players.html">👥 Players</a> |
+  <a href="#">🏆 Tournament</a> |
+  <a href="#">📅 Schedule</a> |
+  <a href="#">📊 Standings</a> |
+  <a href="#">📋 Results</a> |
+  <a href="#">🏅 Champions</a> |
+  <a href="#">📚 Seasons</a>
+</nav>
 <header>
-<h1>KING'S ARENA</h1>
+<h1>KING'S ARENA S30</h1>
 </header>
 
 <div class="hero">
-<h2>Welcome to King's Arena eFootball Tournament</h2>
-<p>The Official Tournament Website</p>
+  <h2>Professional eFootball Tournament Platform</h2>
+<p>🟢 Registration: OPEN</p>
+<a href="https://forms.gle/giUWxDtWckXKzhDVA">
+    <button>Join Tournament</button>
+</a>
+</div>
+<section class="menu">
 
-<button>Join Tournament</button>
+<div class="card">
+<h2>👥 Players</h2>
+<p>View all registered players</p>
+<a href="players.html">Open →</a>
 </div>
 
+<div class="card">
+<h2>📅 Match Fixtures</h2>
+<p>Group Stage & Knockout</p>
+<a href="#">Open →</a>
+</div>
+
+<div class="card">
+<h2>📊 League Standings</h2>
+<p>Current rankings</p>
+<a href="#">Open →</a>
+</div>
+
+<div class="card">
+<h2>🪙 Buy Coin</h2>
+<p>Buy eFootball Coins</p>
+<a href="https://t.me/YOUR_CHANNEL">Buy Now →</a>
+</div>
+<div class="card">
+    <h2>📤 Send Result</h2>
+    <p>Submit your match result</p>
+    <a href="send-result.html">Open →</a>
+</div>
+</section>
 </body>
     </html>

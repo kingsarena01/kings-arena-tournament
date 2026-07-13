@@ -4,12 +4,22 @@ const tournament = {
   registration: "OPEN"
 };
 
-document.getElementById("seasonTitle").innerText =
-tournament.season + " Coming Soon";
-document.getElementById("formatText").innerText =
-tournament.season + " : " + tournament.format;
-document.getElementById("registrationStatus").innerText =
-"🟢 Registration Status : " + tournament.registration;
+const seasonTitle = document.getElementById("seasonTitle");
+const formatText = document.getElementById("formatText");
+const registrationStatus = document.getElementById("registrationStatus");
+
+if (seasonTitle) {
+  seasonTitle.innerText = tournament.season + " Coming Soon";
+}
+
+if (formatText) {
+  formatText.innerText = tournament.season + " : " + tournament.format;
+}
+
+if (registrationStatus) {
+  registrationStatus.innerText =
+    "🟢 Registration Status : " + tournament.registration;
+}
 function saveTournament() {
   const season = document.getElementById("season").value;
   const format = document.getElementById("format").value;
@@ -24,18 +34,17 @@ function saveTournament() {
 const savedSeason = localStorage.getItem("season");
 const savedFormat = localStorage.getItem("format");
 const savedRegistration = localStorage.getItem("registration");
-
-if (savedSeason) {
+if (savedSeason && document.getElementById("seasonTitle")) {
   document.getElementById("seasonTitle").innerText =
     savedSeason + " Coming Soon";
 }
 
-if (savedFormat) {
+if (savedFormat && document.getElementById("formatText")) {
   document.getElementById("formatText").innerText =
     savedSeason + " : " + savedFormat;
 }
 
-if (savedRegistration) {
+if (savedRegistration && document.getElementById("registrationStatus")) {
   document.getElementById("registrationStatus").innerText =
     "🟢 Registration Status : " + savedRegistration;
 }

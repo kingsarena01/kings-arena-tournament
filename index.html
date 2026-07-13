@@ -1,108 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>King's Arena eFootball Tournament</title>
 
-<style>
-body{
-    margin:0;
-    background:#0a0a0a;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-}
-header{
-    background:gold;
-    color:black;
-    padding:20px;
-}
-h1{
-    margin:0;
-}
-.hero{
-    padding:60px 20px;
-}
-button{
-    padding:15px 30px;
-    border:none;
-    border-radius:30px;
-    background:gold;
-    font-size:18px;
-    font-weight:bold;
-}nav{
-    background:#111;
-    padding:15px;
-}
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-    font-weight:bold;
-    font-size:16px;
-}
-
-nav a:hover{
-    color:gold;
-}.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-    padding:30px;
-}
-
-.card{
-    background:#1b1b1b;
-    border-radius:20px;
-    padding:25px;
-    text-align:left;
-    border:2px solid gold;
-}
-
-.card h2{
-    margin-top:0;
-    color:gold;
-}
-
-.card p{
-    color:#ddd;
-}
-
-.card a{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    background:gold;
-    color:black;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-}
-</style>
 
 </head>
 
 <body>
 <nav>
-  <a href="#">🏠 Home</a> |
-  <a href="#">📝 Register</a> |
-  <a href="players.html">👥 Players</a> |
-  <a href="#">🏆 Tournament</a> |
-  <a href="#">📅 Schedule</a> |
-  <a href="#">📊 Standings</a> |
-  <a href="#">📋 Results</a> |
-  <a href="#">🏅 Champions</a> |
-  <a href="#">📚 Seasons</a>
+<a href="index.html">🏠 Home</a>
+<a href="players.html">👥 Players</a>
+<a href="results.html">📋 Results</a>
+<a href="send-result.html">📤 Send Result</a>
+<a href="#">🏆 Tournament</a>
+<a href="#">📅 Schedule</a>
+<a href="#">📊 Standings</a>
+<a href="#">🥇 Champions</a>
+<a href="#">📚 Seasons</a>
 </nav>
 <header>
-<h1>KING'S ARENA S30</h1>
+    <h1>KING'S ARENA eFOOTBALL</h1>
+    <p>Official Tournament Platform</p>
 </header>
 
 <div class="hero">
-  <h2>Professional eFootball Tournament Platform</h2>
-<p>🟢 Registration: OPEN</p>
+<h2 id="seasonTitle">Season 32 Coming Soon</h2>
+
+<p>🏆 Official King's Arena eFootball Tournament</p>
+
+<p>📢 Tournament Format changes every season.</p>
+
+<p id="registrationStatus"></p>
+
 <a href="https://forms.gle/giUWxDtWckXKzhDVA">
     <button>Join Tournament</button>
 </a>
@@ -116,14 +50,14 @@ nav a:hover{
 </div>
 
 <div class="card">
-<h2>📅 Match Fixtures</h2>
-<p>Group Stage & Knockout</p>
-<a href="#">Open →</a>
+<h2>🏆 Tournament Format</h2>
+<p id="formatText"></p>
+<a href="#">View Format →</a>
 </div>
 
 <div class="card">
-<h2>📊 League Standings</h2>
-<p>Current rankings</p>
+<h2>📊 Standings</h2>
+<p>Live Table</p>
 <a href="#">Open →</a>
 </div>
 

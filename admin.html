@@ -66,7 +66,23 @@ button{
 <button class="approve">✅ Approve Result</button>
 
 <button class="reject">❌ Reject Result</button>
+<hr>
 
+<h2>Tournament Settings</h2>
+
+<p>Season</p>
+<input type="text" id="season" value="Season 32">
+
+<p>Format</p>
+<input type="text" id="format" value="Champions League Format">
+
+<p>Registration</p>
+<select id="registration">
+  <option>OPEN</option>
+  <option>CLOSED</option>
+</select>
+
+<button onclick="saveTournament()">Save Settings</button>
 </div>
 
 </body>

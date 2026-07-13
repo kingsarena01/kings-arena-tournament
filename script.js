@@ -10,3 +10,32 @@ document.getElementById("formatText").innerText =
 tournament.season + " : " + tournament.format;
 document.getElementById("registrationStatus").innerText =
 "🟢 Registration Status : " + tournament.registration;
+function saveTournament() {
+  const season = document.getElementById("season").value;
+  const format = document.getElementById("format").value;
+  const registration = document.getElementById("registration").value;
+
+  localStorage.setItem("season", season);
+  localStorage.setItem("format", format);
+  localStorage.setItem("registration", registration);
+
+  alert("Tournament settings saved!");
+}
+const savedSeason = localStorage.getItem("season");
+const savedFormat = localStorage.getItem("format");
+const savedRegistration = localStorage.getItem("registration");
+
+if (savedSeason) {
+  document.getElementById("seasonTitle").innerText =
+    savedSeason + " Coming Soon";
+}
+
+if (savedFormat) {
+  document.getElementById("formatText").innerText =
+    savedSeason + " : " + savedFormat;
+}
+
+if (savedRegistration) {
+  document.getElementById("registrationStatus").innerText =
+    "🟢 Registration Status : " + savedRegistration;
+}
